@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SearchGithubUser</string>
+    <string name="title_activity_main_user">Search Github Users</string>
+    <string name="title_activity_detail_users">Detail User</string>
+    <string name="title_activity_favorite">Favorite User</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="repository">Repository</string>
+    <string name="follower">Follower</string>
+    <string name="following">Following</string>
+    <string name="default_number">0</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="email">Email</string>
+    <string name="blog">Websites</string>
+    <string name="followers">followers</string>
+    <string name="btn_follow">Follow</string>
+    <string name="image_github_user">Image github user</string>
+    <string name="search_hint">Enter github username</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="tab_follower">Follower</string>
+    <string name="tab_following">Following</string>
+    <string name="fab_content_desc">favorites</string>
+    <string name="app_language">Select Language</string>
+    <string name="app_reminder">Reminder at 09.00 AM</string>
+    <string name="key_language">Language</string>
+    <string name="key_reminder">Reminder</string>
+    <string name="nothing">Nothing</string>
+    <string name="favorite">Favorite</string>
+    <string name="msg_delete_success">Successfully deleted favorites</string>
+    <string name="msg_delete_failed">Failed to delete favorites</string>
+    <string name="msg_save_success">Successfully added to favorites</string>
+    <string name="msg_reminder">Let\'s find popular user on Github!</string>
+    <string name="dialog_message_delete">Are you sure you want to remove this user from Favorites?</string>
+    <string name="dialog_title_delete">Remove Favorite</string>
+    <string name="dialod_button_delete">Delete</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="url_github">Url Github</string>
+    <string name="github_url">Github Url</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_widget_favorite">Favorite Github User</string>
+    <string name="msg_reminder_set">Reminder set up</string>
+    <string name="msg_reminder_cancel">Reminder canceled</string>
+    <string name="no_favorite_data">No Favorite Data</string>
+    <string name="no_search_data">No Search Data</string>
+
+</resources>
