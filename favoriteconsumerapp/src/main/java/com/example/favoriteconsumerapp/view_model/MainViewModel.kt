@@ -6,6 +6,7 @@ import android.widget.ProgressBar
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.example.favoriteconsumerapp.BuildConfig
 import com.example.favoriteconsumerapp.model.GithubUser
 import com.loopj.android.http.AsyncHttpClient
 import com.loopj.android.http.AsyncHttpResponseHandler
@@ -25,7 +26,8 @@ class MainViewModel : ViewModel() {
 
         val listItems = java.util.ArrayList<GithubUser>()
 
-        val apiKey = "token 9a05aca2b2255562bf578a3c2cf77b618a20f9ff"
+        val token = BuildConfig.GITHUB_TOKEN
+        val apiKey = "token $token"
         val url = "https://api.github.com/users/$userName/followers"
 
         val client = AsyncHttpClient()
@@ -97,7 +99,8 @@ class MainViewModel : ViewModel() {
 
         val listItems = java.util.ArrayList<GithubUser>()
 
-        val apiKey = "token 9a05aca2b2255562bf578a3c2cf77b618a20f9ff"
+        val token = BuildConfig.GITHUB_TOKEN
+        val apiKey = "token $token"
         val url = "https://api.github.com/users/$userName/following"
 
         val client = AsyncHttpClient()
