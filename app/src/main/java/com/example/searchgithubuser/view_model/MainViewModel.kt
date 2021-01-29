@@ -10,6 +10,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.viewpager.widget.ViewPager
 import com.bumptech.glide.Glide
+import com.example.searchgithubuser.BuildConfig
 import com.example.searchgithubuser.adapter.SectionPagerAdapter
 import com.example.searchgithubuser.model.GithubUser
 import com.google.android.material.tabs.TabLayout
@@ -33,7 +34,9 @@ class MainViewModel : ViewModel() {
 
         val listItems = java.util.ArrayList<GithubUser>()
 
-        val apiKey = "token 9a05aca2b2255562bf578a3c2cf77b618a20f9ff"
+        val token = BuildConfig.GITHUB_TOKEN
+        Log.d("Token", token)
+        val apiKey = "token $token"
         val url = "https://api.github.com/search/users?q=$userName"
 
         val client = AsyncHttpClient()
@@ -111,7 +114,8 @@ class MainViewModel : ViewModel() {
         progressBar.visibility = View.VISIBLE
         activity.fab_favorites.hide()
 
-        val apiKey = "token 9a05aca2b2255562bf578a3c2cf77b618a20f9ff"
+        val token = BuildConfig.GITHUB_TOKEN
+        val apiKey = "token "+ token
         val url = "https://api.github.com/users/${userName}"
 
         val client = AsyncHttpClient()
@@ -199,7 +203,8 @@ class MainViewModel : ViewModel() {
 
         val listItems = java.util.ArrayList<GithubUser>()
 
-        val apiKey = "token 9a05aca2b2255562bf578a3c2cf77b618a20f9ff"
+        val token = BuildConfig.GITHUB_TOKEN
+        val apiKey = "token "+ token
         val url = "https://api.github.com/users/$userName/followers"
 
         val client = AsyncHttpClient()
